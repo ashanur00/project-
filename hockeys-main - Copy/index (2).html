@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey</title>
+    <!-- tilwind and daisy ui cdm -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'main-color': '#FF4240',
+                        'rgb': '#13131899',
+                        'rgb-color': '#13131880',
+                        'rgb-2': '#13131805',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-family {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-family">
+
+    <header class="container mx-auto">
+        <nav class="mb-10">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a><span class="text-main-color">Home</span></a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost sm:text-4xl lg:text-4xl font-extrabold">Hockey<span
+                            class="text-main-color">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a><span class="text-main-color">Home</span></a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-2">
+                    <div class="lg:"><a><img class="gap-2" src="Images/Frame-1.svg" alt=""></a></div>
+                    <a class="btn text-white bg-main-color">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto">
+        <!-- featured section -->
+        <!-- section noe -->
+        <section class="text-center">
+            <hr class="mt-28 mb-8">
+            <h2 class="text-4xl font-extrabold">Professional Hockeys Club</h2>
+            <p class="mt-6 text-sm text-rgb">The Men's FIH Hockey World Cup is an international field hockey competition
+                <br>
+                organised by the International Hockey Federation (FIH). <br>
+                The tournament was started in 1971.
+                Pakistan is the most successful team, having won the tournament four times.
+            </p>
+            <hr class="mt-8 mb-12">
+            <div class="grid gap-6 grid-cols-1 sm:grid-cols-1 lg:grid-cols-4">
+                <div class="card p-8 bg-base-100">
+                    <figure>
+                        <div class="radial-progress text-blue-700" style="--value:90;" role="progressbar">90%</div>
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-xl font-semibold">Prayer Facility</h2>
+                        <p class="text-rgb text-sm">Amet consectetur. Condimentum dignissim adipiscing.</p>
+
+                    </div>
+                </div>
+                <div class="card p-8 bg-base-100">
+                    <figure>
+                        <div class="radial-progress text-green-600" style="--value:95;" role="progressbar">95%</div>
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-xl font-semibold">Experienced Coach</h2>
+                        <p class="text-rgb text-sm">Amet consectetur. Condimentum dignissim adipiscing.</p>
+
+                    </div>
+                </div>
+                <div class="card p-8 bg-base-100">
+                    <figure>
+                        <div class="radial-progress text-red-700" style="--value:70;" role="progressbar">70%</div>
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-xl font-semibold">Senior Player</h2>
+                        <p class="text-rgb text-sm">Amet consectetur. Condimentum dignissim adipiscing.</p>
+
+                    </div>
+                </div>
+                <div class="card p-8 bg-base-100">
+                    <figure>
+                        <div class="radial-progress text-red-500" style="--value:80;" role="progressbar">80%</div>
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-xl font-semibold">Training Ground</h2>
+                        <p class="text-rgb text-sm">Amet consectetur. Condimentum dignissim adipiscing.</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <hr class="mt-24 mb-8">
+        <!-- section tow -->
+        <section class="items-center">
+            <div class="text-center">
+                <h2 class="text-4xl font-extrabold">Program Sections</h2>
+                <p class="mt-6 text-sm text-rgb">The FIH Men's Hockey World Cup 2023 is set to begin with Rio 2016
+                    Olympic
+                    champions Argentina taking
+                    on South Africa at the<br> Kalinga Stadium in Bhubaneswar on January 13.</p>
+            </div>
+            <hr class="mt-8 mb-12">
+            <div class="grid gap-7 grid-cols-1 sm:grid-cols-1 lg:grid-cols-2">
+                <div class="card lg:max-w-xl bg-rgb-color  image-full">
+                    <figure><img src="Images/2.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-2xl font-extrabold">Junior Program</h2>
+                        <p class="font-medium text-white">The 2023 Men's FIH Hockey Junior World Cup was the 13th
+                            edition of the Men's
+                            FIH Hockey Junior World Cup, the biennial men's under-21 field hockey world
+                            championship organized by the International Hockey Federation. It was held
+                            at the Malaysia National Hockey
+                            Stadium in Kuala Lumpur, Malaysia from 5 to 16 December 2023.</p>
+                        <div class="card-actions">
+                            <button class="btn bg-main-color text-white">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card lg:max-w-xl bg-rgb-color image-full">
+                    <figure><img src="Images/3.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-2xl font-extrabold text-white">Teenager Program</h2>
+                        <p class="font-medium text-white">When I went into the changeroom,
+                            I saw girls from all over the world. That was kind of relieving because I didn’t feel like
+                            an outsider.
+                            I was like, ‘Oh, I belong with them.’ We were all beginners.</p>
+                        <div class="card-actions">
+                            <button class="btn bg-main-color text-white">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card lg:max-w-6xl mt-8 bg-rgb-color image-full">
+                    <figure><img src="Images/4.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-2xl font-extrabold text-white">Professional Program</h2>
+                        <p class="font-medium text-white">As hockey continues to get faster and more dynamic,
+                            the physical demands on hockey players have never been higher.
+                            Much like the evolution of the game on the ice, there’s been an evolution of
+                            training off the ice. Gone are the days of “body part” focused workouts,
+                            half-assed strength workouts, or going for the occasional jog.
+                            Today’s elite players are training in a completely different way.
+                            They’re using integrative workouts to train kinetic chains, they’re refining
+                            their movement quality, they’re getting savagely strong while remaining lean, mobile, and
+                            quick.
+                        <div class="card-actions">
+                            <button class="btn bg-main-color text-white">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="mt-24 mb-8">
+        <!-- section three -->
+        <section>
+            <div class="text-center">
+                <h2 class="text-4xl font-extrabold">Our New Products</h2>
+                <p class="text-rgb mt-4">Keep tabs on the newest product releases from all of
+                    the top hockey brands! Learn about the latest gear and discover <br>
+                    which NHL players have already picked it up!</p>
+            </div>
+            <hr class="mt-8 mb-12">
+
+            <div class="grid gap-6 grid-cols-1 sm:grid-cols-1 lg:grid-cols-2">
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="Images/5.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex"><img class="w-6" src="Images/Frame.png" alt="">
+                            <p class="text-rgb">5.0</p>
+                            <img src="Images/Frame (1).png" alt="">
+                            <p class="text-rgb">30k</p>
+                            <img src="Images/Frame (2).png" alt="">
+                            <p class="text-rgb">2k</p>
+                        </div>
+                        <h2 class="text-2xl font-extrabold">varsity jacket</h2>
+                        <p class="font-medium text-sm text-rgb">New Varsity Jackets for sale in Tipurdi.</p>
+                        <div class="flex">
+                            <p class="text-xl font-extrabold text-main-color">Price - $22.00</p>
+                            <img src="Images/Frame-2.svg" alt="">
+                            <p class="text-rgb font-normal text-sm">Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="Images/6.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex"><img class="w-6" src="Images/Frame.png" alt="">
+                            <p class="text-rgb">5.0</p>
+                            <img src="Images/Frame (1).png" alt="">
+                            <p class="text-rgb">30k</p>
+                            <img src="Images/Frame (2).png" alt="">
+                            <p class="text-rgb">2k</p>
+                        </div>
+                        <h2 class="text-2xl font-extrabold">Football</h2>
+                        <p class="font-medium text-sm text-rgb">Sport:Soccer Color: green- Mixed Size:5 Material:TPU Age
+                            range:All</p>
+                        <div class="flex">
+                            <p class="text-xl font-extrabold text-main-color">Price - $30.00</p>
+                            <img src="Images/Frame-2.svg" alt="">
+                            <p class="text-rgb font-normal text-sm">Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="Images/7.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex"><img class="w-6" src="Images/Frame.png" alt="">
+                            <p class="text-rgb">5.0</p>
+                            <img src="Images/Frame (1).png" alt="">
+                            <p class="text-rgb">30k</p>
+                            <img src="Images/Frame (2).png" alt="">
+                            <p class="text-rgb">2k</p>
+                        </div>
+                        <h2 class="text-2xl font-extrabold">Cap</h2>
+                        <p class="font-medium text-sm text-rgb"> Embroidered Baseball Cap</p>
+                        <div class="flex">
+                            <p class="text-xl font-extrabold text-main-color">Price - $15.00</p>
+                            <img src="Images/Frame-2.svg" alt="">
+                            <p class="text-rgb font-normal text-sm">Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="Images/8.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex"><img class="w-6" src="Images/Frame.png" alt="">
+                            <p class="text-rgb">5.0</p>
+                            <img src="Images/Frame (1).png" alt="">
+                            <p class="text-rgb">30k</p>
+                            <img src="Images/Frame (2).png" alt="">
+                            <p class="text-rgb">2k</p>
+                        </div>
+                        <h2 class="text-2xl font-extrabold">jersey</h2>
+                        <p class="font-medium text-sm text-rgb">We are committed to providing our customers with the
+                            best Player edition jerseys.</p>
+                        <div class="flex">
+                            <p class="text-xl font-extrabold text-main-color">Price - $50.00</p>
+                            <img src="Images/Frame-2.svg" alt="">
+                            <p class="text-rgb font-normal text-sm">Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="Images/9.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex"><img class="w-6" src="Images/Frame.png" alt="">
+                            <p class="text-rgb">5.0</p>
+                            <img src="Images/Frame (1).png" alt="">
+                            <p class="text-rgb">30k</p>
+                            <img src="Images/Frame (2).png" alt="">
+                            <p class="text-rgb">2k</p>
+                        </div>
+                        <h2 class="text-2xl font-extrabold">Hockey helmets</h2>
+                        <p class="font-medium text-sm text-rgb"> Hockey helmets in sizes XS–XL.The best hockey helmets
+                            you can buy.</p>
+                        <div class="flex">
+                            <p class="text-xl font-extrabold text-main-color">Price - $100.00</p>
+                            <img src="Images/Frame-2.svg" alt="">
+                            <p class="text-rgb font-normal text-sm">Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="Images/10.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex"><img class="w-6" src="Images/Frame.png" alt="">
+                            <p class="text-rgb">5.0</p>
+                            <img src="Images/Frame (1).png" alt="">
+                            <p class="text-rgb">30k</p>
+                            <img src="Images/Frame (2).png" alt="">
+                            <p class="text-rgb">2k</p>
+                        </div>
+                        <h2 class="text-2xl font-extrabold">varsity jacket</h2>
+                        <p class="font-medium text-sm text-rgb">Sport:Soccer Color: balck nad text-white Mixed Size:5
+                            Material:TPU Age range:All</p>
+                        <div class="flex">
+                            <p class="text-xl font-extrabold text-main-color">Price - $30.00</p>
+                            <img src="Images/Frame-2.svg" alt="">
+                            <p class="text-rgb font-normal text-sm">Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section four -->
+        <hr class="mt-28 mb-8">
+        <section>
+            <div class="text-center">
+                <h2 class="text-4xl font-extrabold">Clients Question</h2>
+                <p class="text-rgb mt-6">Very laid back and pretty difficult to not get the job, mostly just questions
+                    about hockey or if you have previous work experience.
+                    <br> Managers are very relaxed and easy to talk to.
+                </p>
+            </div>
+            <hr class="mt-8 mb-12">
+            <div>
+                <div class="hero">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img class="" src="Images/11.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <div class="collapse collapse-plus">
+                                <input type="radio" name="my-accordion-3" checked="checked" />
+                                <div class="collapse-title text-xl font-medium">
+                                    Our Equipment
+                                </div>
+                                <div class="collapse-content">
+                                    <p class="text-rgb">Hockey stick and ball are the most important equipment without
+                                        which the sport cannot be played.
+                                        There are many other equipment like shin guard, helmet, glove, shoes, etc.,
+                                        that a hockey player uses during the match.
+                                        The following are the equipment used in the hockey game by the goalie and the
+                                        players.</p>
+                                </div>
+                            </div>
+                            <div class="collapse collapse-plus">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-medium">
+                                    Hockey Training
+                                </div>
+                                <div class="collapse-content">
+                                    <p>
+                                        Wind Sprints/Explosive Running. One of the best exercises for hockey players to
+                                        increase explosiveness on the ice is to engage in various sprinting exercises on
+                                        dry land. ...
+                                        Pull-ups/Chin-ups. Don't have room for a set of weights or a bench press at
+                                        home? ...
+                                        Bench Press. ...
+                                        Squats. ...
+                                        Hang Cleans. ...
+                                        Deadlifts.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="collapse collapse-plus">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-medium">
+                                    Private Lessons
+                                </div>
+                                <div class="collapse-content">
+                                    <p>The primary qualifications for becoming an ice hockey coach are a
+                                        bachelor's degree and professional experience in ice hockey.
+                                        This may take the form of playing the sport or coaching at a lower level.
+                                        You also need strong interpersonal skills and a thorough understanding of the
+                                        game.</p>
+                                </div>
+                            </div>
+                            <div class="collapse collapse-plus">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-medium">
+                                    Ski Touring
+                                </div>
+                                <div class="collapse-content">
+                                    <p>Alpine Touring (AT) or randonnée equipment is specifically designed for ski
+                                        touring in steep terrain;
+                                        a special alpine touring binding, otherwise very similar to a downhill binding,
+                                        allows the heel to
+                                        be raised
+                                        for ease in ascending but locked down for full support when skiing downhill.</p>
+                                </div>
+                            </div>
+                            <div class="collapse collapse-plus">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-medium">
+                                    Booking
+                                </div>
+                                <div class="collapse-content">
+                                    <p>Our biggest claims to national sports fame are in varsity ice hockey. The BU
+                                        Men's Hockey team,
+                                        winner of five NCAA championships,
+                                        and we've sent more players to the NHL than any other college or university.</p>
+                                </div>
+                            </div>
+                            <div class="collapse collapse-plus">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-medium">
+                                    Pricings
+                                </div>
+                                <div class="collapse-content">
+                                    <p>Ice hockey sticks have traditionally been made from wood, but in recent years,
+                                        sticks made of more expensive materials such as aluminum, aramid (brands Kevlar,
+                                        Nomex, Twaron, etc.)
+                                        , fibreglass, carbon fibre, and other composite materials have become common.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- section five -->
+        <section class="">
+            <hr class="mt-28 mb-8">
+            <div class="text-center">
+                <h2 class="text-4xl font-extrabold mb-8">Get In Touch</h2>
+                <p class="text-rgb">Please contact us and we will be pleased to respond to any questions you have about
+                    our Club.
+                    <br> It would be helpful if you could let us know roughly how much hockey you have
+                    played before so we can get the right person to contact you with more information.
+                </p>
+            </div>
+            <hr class="mt-8 mb-12">
+            <div>
+                <div class="hero min-h-screen">
+                    <div class="hero-content gap-32 flex-col lg:flex-row">
+                        <div class="artboard phone-1 mb-8">
+                            <div class="rounded-xl bg-[#BCED6D1A] p-8 mt-8">
+                                <img src="Images/Group 1171275317.png" alt="">
+                                <p class="text-rgb text-sm">Phone Number:</p>
+                                <p class="font-bold">(+62) 123-321-543</p>
+                            </div>
+                            <div class="rounded-xl bg-[#FDDD5F1A] p-8 mt-8">
+                                <img src="Images/Group 1171275318.png" alt="">
+                                <p class="text-sm text-rgb">Email:</p>
+                                <p class="text-xl font-bold">hockeys@support.com</p>
+                            </div>
+                            <div class="rounded-xl bg-[#629CF31A] p-8 mt-8">
+                                <img src="Images/Group 1171275321.png" alt="">
+                                <p class="text-sm text-rgb">Location:</p>
+                                <p class="text-xl font-bold">152/1 Mohakhali Wireless Gate</p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="grid gap-8 grid-cols-1 lg:grid-cols-2">
+                                <div>
+                                    <h4 class="text-xl font-bold">Your Name</h4>
+                                    <input type="text" placeholder="Enter your full name"
+                                        class="input input-bordered bg-rgb-2 w-full max-w-xs" />
+                                </div>
+
+                                <div>
+                                    <h4 class="text-xl font-bold">Your Email</h4>
+                                    <input type="text" placeholder="Enter your email"
+                                        class="input input-bordered bg-rgb-2 w-full max-w-xs" />
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold">Subject</h4>
+                                    <input type="text" placeholder="Enter your subject"
+                                        class="input input-bordered bg-rgb-2 w-full max-w-xs" />
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold">Phone Number</h4>
+                                    <input type="text" placeholder="Enter your phone number"
+                                        class="input input-bordered bg-rgb-2 w-full max-w-xs" />
+                                </div>
+                            </div>
+                            <div class="mt-8 row-span-2">
+                                <h4 class="text-xl font-bold">Message</h4>
+                                <textarea class="textarea textarea-bordered bg-rgb-2 lg:w-96"
+                                    placeholder="Write your message"></textarea>
+                            </div>
+                            <div class="mt-8">
+                                <button class="btn px-4 lg:w-96 text-white bg-main-color">Send Message</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section sixe -->
+        <section class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+            <h3 class="text-2xl font-extrabold">Social Media</h3>
+            <nav>
+                <div class="grid grid-flow-col gap-4">
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                            </path>
+                        </svg></a>
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                            </path>
+                        </svg></a>
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                            </path>
+                        </svg></a>
+                </div>
+            </nav>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer class="footer p-10 lg:py-24 lg:px-24  bg-slate-900 text-base-content mt-28">
+        <aside>
+            <h3 class="text-2xl font-extrabold text-white">Get In Touch</h3>
+            <p class="text-sm text-white">Dit amet consectetur.<br> 
+                Condimentum  adipiscing aliquam turpis placerat <br> dolor.
+                 Purus urna in sit nullam proin.</p>
+                 <div>
+                    <img src="Images/Frame (3).png" alt="">
+                    <p class="text-white text-sm font-medium mb-2">hockeys@support.com</p>
+                    <img src="Images/Frame (4).png" alt="">
+                    <p class="text-white text-sm font-medium">(+62) 123-321-543</p>
+                 </div>
+
+        </aside>
+            <nav>
+                <header class="text-xl font-bold text-white">Company</header>
+                <a class="link link-hover text-sm text-white">About us</a>
+                <a class="link link-hover text-sm text-white">Leadership</a>
+                <a class="link link-hover text-sm text-white">Careers</a>
+                <a class="link link-hover text-sm text-white">News & Article</a>
+                <a class="link link-hover text-sm text-white">Legal Notice</a>
+            </nav>
+            <nav>
+                <header class="text-xl font-bold text-white">Support</header>
+                <a class="link link-hover text-sm text-white">Help Center</a>
+                <a class="link link-hover text-sm text-white">FAQ</a>
+                <a class="link link-hover text-sm text-white">Ticket Support</a>
+                <a class="link link-hover text-sm text-white">Contact Us</a>
+            </nav>
+            <nav>
+                <header class="text-xl font-bold text-white">Services</header>
+                <a class="link link-hover text-sm text-white">Academy</a>
+                <a class="link link-hover text-sm text-white">Group Lesson</a>
+                <a class="link link-hover text-sm text-white">Private Lesson</a>
+                <a class="link link-hover text-sm text-white">Hockeys for kids</a>
+                <a class="link link-hover text-sm text-white">Hockeys for Adult</a>
+            </nav>
+    </footer>
+
+</body>
+
+</html>
